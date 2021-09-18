@@ -32,10 +32,11 @@ class Api extends Component {
                 <div className="Api">
                     <ul>
                         {items.map (item =>(    
-                            <li key={item.id}>
-                                Name:{item.name} | Email: {item.email}
+                            <li key={item.id} style={{ listStyleType: "none" }}>
+                                Name:{item.name} <br />Email: {item.email}
                             </li>
-                        ))};
+                            
+                        ))}
                     </ul>
                 </div>
             );
